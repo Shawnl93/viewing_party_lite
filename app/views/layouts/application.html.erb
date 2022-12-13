@@ -10,12 +10,8 @@
   </head>
 
   <body>
-    <% flash.each do |type, msg| %>
-      <div>
-        <% msg.each do |m| %>
-          <p><%= m %></p>
-        <% end %>
-      </div>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
     <% end %>
     <nav class="topnav-left">
       <%= link_to "Home", root_path %>

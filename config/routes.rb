@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   end
 
   resources :register, only: [:new, :create], controller: "users"
+
 end

@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/12?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 02 Dec 2022 01:44:42 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - aec35c2ed5cc988211e92d26bc2b294600f86458
+      X-Memc-Age:
+      - '4392'
+      X-Memc-Expires:
+      - '12706'
+      Etag:
+      - W/"7335baec5bfea0dfc084359289b883e4"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 5d351175d5947d478733fbecdab866f6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - q5KyaTT01gbDyCP3XjQ6nNYC6QjMLU4Y0z0z2wjDZg8YOxXbOKcfnw==
+      Age:
+      - '4111'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/yzqaKAhglTrkeOfuIXYYArf0WnA.jpg","belongs_to_collection":{"id":137697,"name":"Finding
+        Nemo Collection","poster_path":"/ucM59odfzLdQlmtNVAkmiB9Qw3J.jpg","backdrop_path":"/2hC8HHRUvwRljYKIcQDMyMbLlxz.jpg"},"budget":94000000,"genres":[{"id":16,"name":"Animation"},{"id":10751,"name":"Family"}],"homepage":"http://movies.disney.com/finding-nemo","id":12,"imdb_id":"tt0266543","original_language":"en","original_title":"Finding
+        Nemo","overview":"Nemo, an adventurous young clownfish, is unexpectedly taken
+        from his Great Barrier Reef home to a dentist''s office aquarium. It''s up
+        to his worrisome father Marlin and a friendly but forgetful fish Dory to bring
+        Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish,
+        hungry seagulls, and more along the way.","popularity":92.027,"poster_path":"/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg","production_companies":[{"id":3,"logo_path":"/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png","name":"Pixar","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"2003-05-30","revenue":940335536,"runtime":100,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"There
+        are 3.7 trillion fish in the ocean. They''re looking for one.","title":"Finding
+        Nemo","video":false,"vote_average":7.825,"vote_count":17035}'
+  recorded_at: Fri, 02 Dec 2022 02:53:13 GMT
+recorded_with: VCR 6.1.0
